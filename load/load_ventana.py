@@ -11,7 +11,7 @@ for module_name in qt_modules:
         pass
 
 if QtWidgets is None:
-    raise ImportError("No supported Qt binding found. Install PyQt5, PyQt6 or PySide6.")
+    raise ImportError("No unsupported Qt binding found. Install PyQt5, PyQt6 or PySide6.")
 
 QApplication = QtWidgets.QApplication
 QMainWindow = QtWidgets.QMainWindow
@@ -21,8 +21,6 @@ QWidget = QtWidgets.QWidget
 QLabel = QtWidgets.QLabel
 QMenu = QtWidgets.QMenu
 QAction = QtWidgets.QAction
-
-from menus.menu_lista_enlazada import MenuListaEnlazada
 
 class MiVentanaPrincipal(QMainWindow):
     def __init__(self):

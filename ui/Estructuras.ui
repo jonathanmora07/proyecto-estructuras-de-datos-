@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>455</height>
+    <height>214</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,14 +25,29 @@
    </property>
    <widget class="QMenu" name="menuEstructuras">
     <property name="title">
-     <string>Estructuras </string>
+     <string>Menus</string>
     </property>
     <widget class="QMenu" name="menuLineales">
      <property name="title">
       <string>Lineales</string>
      </property>
      <addaction name="actionListas_Enlazadas"/>
+     <addaction name="actionNodo"/>
+     <addaction name="actionBanco"/>
+     <addaction name="actionQueue_2"/>
+     <addaction name="actionStack"/>
+     <addaction name="actionconversion_expresiones"/>
     </widget>
+    <widget class="QMenu" name="menuStack">
+     <property name="title">
+      <string>Stack</string>
+     </property>
+     <addaction name="actionPila"/>
+     <addaction name="actionInfija_Posfija"/>
+     <addaction name="actionQueue"/>
+     <addaction name="actionEvaluar"/>
+    </widget>
+    <addaction name="menuStack"/>
     <addaction name="menuLineales"/>
     <addaction name="separator"/>
     <addaction name="actionSalir"/>
@@ -48,6 +63,51 @@
   <action name="actionListas_Enlazadas">
    <property name="text">
     <string>Listas Enlazadas</string>
+   </property>
+  </action>
+  <action name="actionPila">
+   <property name="text">
+    <string>Pila</string>
+   </property>
+  </action>
+  <action name="actionInfija_Posfija">
+   <property name="text">
+    <string>Infija-Posfija</string>
+   </property>
+  </action>
+  <action name="actionQueue">
+   <property name="text">
+    <string>Queue</string>
+   </property>
+  </action>
+  <action name="actionNodo">
+   <property name="text">
+    <string>Nodo</string>
+   </property>
+  </action>
+  <action name="actionBanco">
+   <property name="text">
+    <string>Banco</string>
+   </property>
+  </action>
+  <action name="actionQueue_2">
+   <property name="text">
+    <string>Queue</string>
+   </property>
+  </action>
+  <action name="actionStack">
+   <property name="text">
+    <string>Stack</string>
+   </property>
+  </action>
+  <action name="actionconversion_expresiones">
+   <property name="text">
+    <string>conversion expresiones</string>
+   </property>
+  </action>
+  <action name="actionEvaluar">
+   <property name="text">
+    <string>Evaluar</string>
    </property>
   </action>
  </widget>
